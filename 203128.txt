@@ -1,0 +1,43 @@
+4. cd C:\SI2023\SI_2023_lab1_203128
+git init
+5. git remote add origin https://github.com/ljupchotoshev/SI_2023_lab1_203128.git
+6. git add README.md
+git commit -m "Initial commit"
+7. git add SILab1.java
+git commit -m "Add java class"
+8. git push -u origin master
+9. git branch bug1
+git branch bug2
+git branch bug3
+10. git checkout bug1
+11. git add SILab1.java 
+git commit -m "Fix wrong loop for reading"
+12. git checkout bug2
+13. git add SILab1.java 
+git commit -m "Fix wrong condition in filterOddNumbers"
+14. git checkout bug3
+15. git add SILab1.java
+git commit -m "Fix method sumEvenNumbers"
+16. git checkout bug1
+git push -u origin bug1
+git checkout bug2
+git push -u origin bug2
+git checkout bug3
+git push -u origin bug3
+17. git checkout master
+18. git merge bug1 - Не се случи конфликт
+19. git push
+20. git merge bug2
+Auto-merging SILab1.java
+Merge made by the 'ort' strategy.
+Го реши конфликтот со помош на ort стратегијата
+21. git push
+22. git checkout bug3
+23. git rebase master
+24. git checkout master
+25. 
+git merge bug3 - Не се случи конфликт
+26. git push --force
+27. git log
+28. git checkout master 
+git push
